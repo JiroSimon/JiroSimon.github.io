@@ -1,15 +1,94 @@
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+/* Futuristic Portfolio Design */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background-color: #f9f9f9;
-  color: #333;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; /* Try Google Fonts: Orbitron, Audiowide, or Exo */
+  background: radial-gradient(circle at top left, #0f0f1a, #000000);
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
-h1 {
-  color: #0055ff;
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+}
+
+p, li {
+  color: #cfcfcf;
+}
+
+a {
+  color: #ff8800;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+header {
+  background: linear-gradient(90deg, #001f3f, #000000);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ffe0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-card {
+  background: rgba(20, 20, 40, 0.8);
+  border: 1px solid #00ffe0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(0, 255, 224, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 224, 0.8);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+  border-top: 2px solid #00ffe0;
+  color: #888;
+}
+
+button {
+  background: linear-gradient(90deg, #00ffe0, #0055ff);
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ffd700, #ff8800);
+  box-shadow: 0 0 15px #ffd700;
 }
