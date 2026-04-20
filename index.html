@@ -1,59 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jiro James Simon - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiro James Simon — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Jiro James Simon</h1>
-    <p>BSCS Student | 21 y/o | Futuristic Problem Solver</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about" class="glass-card">
-    <h2>About Me</h2>
-    <p>I am a Computer Science student passionate about building adaptive systems and automation. 
-       My work experience includes being a Customer Experience Agent (2024–2025) and a Learning Associate II (2025–2026) at Alorica, 
-       where I developed strong communication, problem-solving, and technical support skills.</p>
-  </section>
+  <!-- Background Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
 
-  <section id="projects" class="glass-card">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project Title</h3>
-      <p>Project description goes here. Add details later.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">JJS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-tag">BSCS Student · 21</span>
+      <h1 class="hero-name">Jiro James<br><em>Simon</em></h1>
+      <p class="hero-sub">Computer Science student &amp; Customer Experience professional based in Parañaque City, NCR.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
     </div>
-    <div class="project-card">
-      <h3>Project Title</h3>
-      <p>Project description goes here. Add details later.</p>
+    <div class="hero-card glass-card">
+      <div class="status-dot"></div>
+      <span class="status-text">Open to Opportunities</span>
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num">CS</span>
+          <span class="stat-label">Degree Pursuing</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num">PH</span>
+          <span class="stat-label">Based in NCR</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="skills" class="glass-card">
-    <h2>Skills</h2>
-    <p>Languages: Python, Java, JavaScript</p>
-    <p>Frameworks: React, Flask, Node.js</p>
-    <p>Tools: Git, Docker, VS Code</p>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title">Background &amp; Experience</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm <strong>Jiro James Simon</strong>, a 21-year-old Bachelor of Science in Computer Science student with a strong foundation in customer engagement and professional communication, built through hands-on work in the BPO industry.</p>
+          <p>My journey in technology is driven by a passion for building meaningful digital experiences — merging technical knowledge with the people-first mindset I've cultivated working at Alorica.</p>
+          <p>Currently pursuing my CS degree while continuously growing both academically and professionally, I thrive at the intersection of tech, problem-solving, and human connection.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <div class="tl-year">2025 – 2026</div>
+            <div class="tl-role">Learning Associate II</div>
+            <div class="tl-company">Alorica</div>
+            <p class="tl-desc">Supported agent development and training initiatives, facilitating learning programs to elevate team performance and customer experience standards.</p>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="tl-year">2024 – 2025</div>
+            <div class="tl-role">Customer Experience Agent</div>
+            <div class="tl-company">Alorica</div>
+            <p class="tl-desc">Delivered high-quality customer support, resolving inquiries with efficiency and empathy while maintaining strong satisfaction metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact" class="glass-card">
-    <h2>Contact</h2>
-    <p>📍 Parañaque City, NCR</p>
-    <p>📞 09638603419</p>
-    <p>📧 jirojamessimon@gmail.com</p>
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">What I Bring</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group glass-card">
+          <div class="skill-icon">💻</div>
+          <h3>Technical</h3>
+          <ul class="skill-list">
+            <li>Programming Fundamentals</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Web Development (HTML/CSS/JS)</li>
+            <li>Database Concepts</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Professional</h3>
+          <ul class="skill-list">
+            <li>Customer Experience Management</li>
+            <li>Training &amp; Facilitation</li>
+            <li>Communication &amp; Active Listening</li>
+            <li>Team Collaboration</li>
+            <li>Conflict Resolution</li>
+          </ul>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-icon">🧠</div>
+          <h3>Soft Skills</h3>
+          <ul class="skill-list">
+            <li>Critical Thinking</li>
+            <li>Adaptability</li>
+            <li>Time Management</li>
+            <li>Attention to Detail</li>
+            <li>Continuous Learning</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Jiro James Simon | Modern Glassmorphism Portfolio</p>
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">My Work</h2>
+      <p class="section-sub">Projects coming soon. Check back for updates!</p>
+      <div class="projects-grid">
+
+        <!-- Project Card Template — duplicate and fill in to add a project -->
+        <div class="project-card glass-card placeholder">
+          <div class="project-thumb">
+            <span class="project-thumb-icon">🚀</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Tag 1</span>
+            <span class="tag">Tag 2</span>
+          </div>
+          <h3 class="project-title">Project Title</h3>
+          <p class="project-desc">A short description of what this project does, the problem it solves, and the technologies used. Replace this with your actual project details.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">View Demo →</a>
+            <a href="#" class="project-link secondary">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card placeholder">
+          <div class="project-thumb">
+            <span class="project-thumb-icon">🌐</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Tag 1</span>
+            <span class="tag">Tag 2</span>
+          </div>
+          <h3 class="project-title">Project Title</h3>
+          <p class="project-desc">A short description of what this project does, the problem it solves, and the technologies used. Replace this with your actual project details.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">View Demo →</a>
+            <a href="#" class="project-link secondary">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card placeholder">
+          <div class="project-thumb">
+            <span class="project-thumb-icon">📱</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Tag 1</span>
+            <span class="tag">Tag 2</span>
+          </div>
+          <h3 class="project-title">Project Title</h3>
+          <p class="project-desc">A short description of what this project does, the problem it solves, and the technologies used. Replace this with your actual project details.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">View Demo →</a>
+            <a href="#" class="project-link secondary">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub">Whether it's a project, opportunity, or just a hello — my inbox is always open.</p>
+      <div class="contact-grid">
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email</div>
+          <a href="mailto:jirojamessimon@gmail.com" class="contact-value">jirojamessimon@gmail.com</a>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-label">Phone</div>
+          <a href="tel:09638603419" class="contact-value">0963 860 3419</a>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📍</div>
+          <div class="contact-label">Location</div>
+          <span class="contact-value">Parañaque City, NCR, PH</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Jiro James Simon. Designed &amp; Built with care.</p>
   </footer>
+
+  <script>
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.glass-card, .section-title, .section-label, .about-text, .section-sub').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Parallax orbs
+    window.addEventListener('mousemove', (e) => {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      document.querySelector('.orb-1').style.transform = `translate(${x * 30}px, ${y * 30}px)`;
+      document.querySelector('.orb-2').style.transform = `translate(${-x * 20}px, ${-y * 20}px)`;
+    });
+  </script>
 </body>
 </html>
